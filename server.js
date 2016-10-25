@@ -28,9 +28,10 @@ var db = require('./models');
  app.get('/api', controllers.api.index);
 
  app.get('/api/talks', controllers.talks.index);
- 
- app.get('/api/attendees', controllers.attendees.index);
- app.post('/api/attendees', controllers.attendees.create);
+ app.get('/api/talks/:talksId', controllers.talks.show);
+
+ app.get('/api/talks/:talkId/attendees', controllers.attendees.index);
+ app.post('/api/talks/:talkId/attendees', controllers.attendees.create);
 
 //Listen on Port 8080
 app.listen(process.env.PORT || 3000, function () {
