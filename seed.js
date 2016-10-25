@@ -1,4 +1,6 @@
-talksData = [
+var db = require("./models");
+
+var talksData = [
   {
     "title": "CILLUM NON",
     "abstract": "Aliqua consequat mollit Lorem dolor nulla qui sunt tempor veniam eiusmod ullamco quis commodo.",
