@@ -5,7 +5,7 @@ var AttendeeSchema = new Schema({
   name: String,
   company: String,
   email: String,
-  registered: Date
+  registered: String
 });
 
 var Attendee = mongoose.model('Attendee', AttendeeSchema);
